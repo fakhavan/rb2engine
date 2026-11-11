@@ -100,6 +100,9 @@ class SourceTrack:
     """
     waveform_preview: bytes | None = None
     """``.2EX`` PWV6 entries — becomes Engine's overview waveform."""
+    artwork_path: str | None = None
+    """pdb artwork row path (``/PIONEER/Artwork/…``) — fallback when the audio
+    file has no embedded cover."""
 
 
 @dataclass(frozen=True, slots=True)
